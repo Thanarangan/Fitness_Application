@@ -1,0 +1,128 @@
+/* App.css */
+
+/* Body styles */
+body {
+  background-image: url('/images/forest.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+/* Container for the form */
+.app-container {
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+  padding: 2rem;
+  border-radius: 8px;
+  width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  color: white; /* text color */
+  text-align: center;
+}
+
+/* Header */
+.header {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Form styles */
+.workout-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Input field styles */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+input {
+  padding: 0.8rem;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Button styles */
+.submit-btn {
+  padding: 1rem;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #45a049;
+}
+
+/* Message display */
+.message {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.5); /* Light border */
+  background: rgba(255, 255, 255, 0.2); /* Slight transparency */
+  color: white;
+  border-radius: 5px;
+  outline: none;
+}
+
+.form-group input::placeholder {
+  color: rgba(255, 255, 255, 0.7); /* Visible placeholder */
+}
+.workout-history-container {
+  position: absolute;
+  top: 50%;
+  right: 5%; /* Adjust this value to move it further right */
+  transform: translateY(-50%);
+  text-align: left; /* Align text properly */
+  color: white; /* Set text color to white */
+  padding: 20px;
+}
+
+.workout-history-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px; /* Space below the title */
+}
+
+.workout-list {
+  list-style: none;
+  padding: 0;
+}
+
+.workout-item {
+  background-color: rgba(255, 255, 255, 0.1); /* Light transparent background */
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  width: 320px; /* Adjust width slightly for better alignment */
+}
+.username-display {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+
+
+
+

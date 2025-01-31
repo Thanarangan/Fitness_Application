@@ -1,0 +1,112 @@
+/* Ensure full-page background only for login */
+.login-page {
+  background-image: url('/images/d_forest.jpg'); /* Ensure correct path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* To position the title */
+}
+
+/* Welcome Text at the Top Center */
+.welcome-title {
+  position: absolute;
+  top: 30px; /* Distance from the top */
+  left: 50%;
+  transform: translateX(-50%); /* Center horizontally */
+  font-size: 3rem; /* Larger font size */
+  font-weight: bold;
+  color: white; /* White color */
+  margin: 0;
+  text-align: center;
+  z-index: 10; /* Ensure the text stays on top */
+}
+
+/* Center login form */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* Login card (with slight transparency for better visibility) */
+.login-card {
+  background: rgba(0, 0, 0, 0.6); /* Slight transparency for contrast */
+  padding: 2rem;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Soft shadow */
+  color: white;
+  text-align: center;
+  backdrop-filter: blur(8px); /* Frosted glass effect */
+}
+
+/* Login title */
+.login-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+/* Input field styles */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+  text-align: left;
+  align-items: center; /* Center the input fields */
+}
+
+.input-field {
+  width: 100%;
+  padding: 0.9rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.15); /* Subtle transparency */
+  color: white;
+  outline: none;
+  transition: background 0.3s ease, border 0.3s ease;
+}
+
+.input-field::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.input-field:focus {
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid white;
+}
+
+/* Button styling */
+.login-button {
+  padding: 1rem;
+  font-size: 1.2rem;
+  color: white;
+  background: linear-gradient(135deg, #4CAF50, #2E7D32);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.login-button:hover {
+  background: linear-gradient(135deg, #45a049, #1B5E20);
+  transform: scale(1.05);
+}
+
+/* Error message */
+.error-message {
+  color: #f87171;
+  font-size: 1rem;
+  margin-top: 1rem;
+  font-weight: bold;
+}
